@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#146c43"><meta name="description" content="A complete beginner-to-advanced Microsoft Excel learning platform with engineering applications.">
+  <title>Excel Master Course | Learn Excel A–Z</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#dashboard" aria-label="Excel Master Course home"><span class="brand-mark">X</span><span><b>Excel Master</b><small>COURSE A–Z</small></span></a>
+      <div class="sidebar-label">LEARNING SPACE</div>
+      <nav class="side-nav" aria-label="Main navigation">
+        <button class="nav-link active" data-view="dashboard"><span>▦</span> Dashboard</button>
+        <button class="nav-link" data-view="course"><span>▤</span> Course curriculum</button>
+        <button class="nav-link" data-view="lesson"><span>▣</span> Learn a lesson</button>
+        <button class="nav-link" data-view="practice"><span>▦</span> Excel practice lab</button>
+        <button class="nav-link" data-view="quizzes"><span>✓</span> Quizzes & exams</button>
+        <button class="nav-link" data-view="projects"><span>⌘</span> Engineering projects</button>
+        <button class="nav-link" data-view="resources"><span>⇩</span> Learning resources</button>
+        <button class="nav-link" data-view="progress"><span>◷</span> My progress</button>
+        <button class="nav-link" data-view="certificate"><span>♜</span> Certificate</button>
+      </nav>
+      <div class="sidebar-bottom"><div class="mini-goal"><span class="goal-icon">✦</span><b>Keep learning</b><p>Small steps every day build strong Excel skills.</p><div class="goal-line"><i id="sideProgress"></i></div><small id="sideProgressText">0% course progress</small></div><button class="nav-link" id="themeToggle"><span>◐</span> Toggle appearance</button></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><button class="icon-btn mobile-menu" id="menuToggle" aria-label="Open menu">☰</button><div class="breadcrumb">Learning space <span>/</span> <b id="crumb">Dashboard</b></div><div class="top-actions"><label class="search-box"><span>⌕</span><input id="globalSearch" type="search" placeholder="Search lessons, formulas..." aria-label="Search course"></label><button class="icon-btn" id="bookmarkView" title="Bookmarked lessons">☆</button><div class="avatar">S</div></div></header>
+      <div class="content" id="content" tabindex="-1"></div>
+      <footer class="footer"><span>EXCEL MASTER COURSE</span><span>Learn carefully. Practise consistently. Build confidently.</span></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="curriculum.js"></script><script src="questions.js"></script><script src="storage.js"></script><script src="app.js"></script>
+</body></html>
